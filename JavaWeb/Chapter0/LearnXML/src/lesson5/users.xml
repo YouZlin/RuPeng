@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE users SYSTEM "users.dtd">
+<users>
+	<user id="u001" name="蛋蛋">
+		<email>85740295@qq.com</email>
+		<phones>
+			<phone>186948659604</phone>
+			<phone>17586973354</phone>
+		</phones>
+	</user>
+	<user id="u002" name="肉肉">
+		<email>847659482@qq.com</email>
+		<phones>
+			<phone>186948659604</phone>
+			<phone>17586973354</phone>
+		</phones>
+	</user>
+	<user id="u003" name="花花">
+		<email>4386739219@qq.com</email>
+		<phones>
+			<phone>186948659604</phone>
+			<phone>17586973354</phone>
+		</phones>
+	</user>
+</users>

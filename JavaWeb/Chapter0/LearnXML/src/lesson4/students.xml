@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	空格后 Alt+/  
+				xsinp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+				固定需要有,使文件作为唯一的命名空间,准确定位避免冲突
+				xsi:schemaLocation="{namespace} {location} {namespace1} {location1} {namespace2} {location2} ..." 
+				固定需要有,确定xml引用的schema的命名空间和路径
+				xmlns="mystudents"
+				使用命名空间
+				xmlns:x="xx"
+				对命名空间起别名,在下面用到的命名空间的规则
+				<x:xx></x:xx>
+-->
+<students  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:schemaLocation="mystudents students.xsd otherspace xx"
+			xmlns="mystudents"
+			xmlns:x="xx">
+			
+	<student>
+		<x:xx></x:xx>
+		<name>蛋蛋</name>
+	</student>
+	<student>
+		<name>建国</name>
+	</student>
+</students>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 使用DTD约束 -->
+<!-- 
+	元素内容的类型:
+			ANY
+			EMPTY
+			(#PCDATA)
+			(子元素列表)
+			,	逗号表示元素按声明的顺序出现
+			|	表示元素只能出现其中一种元素
+			+	表示元素至少出现一次
+			*	表示元素可以出现0次或者多次
+			?	表示元素出现0次或者1次
+ -->
+<!DOCTYPE users[
+			<!--
+			<!ELEMENT 元素名称 元素内容>    元素声明语法
+			-->
+			<!ELEMENT users (user*)>
+	        <!ELEMENT user (email+,phones?)>
+	        <!ELEMENT email (#PCDATA)>
+	        <!ELEMENT phones (phone*)>
+	        <!ELEMENT phone (#PCDATA)>
+			<!-- 
+			<!ATTLIST 元素名称  属性列表>          一个元素所包含的属性声明语法
+			 -->
+			 <!--
+			 	属性类型:
+				ID	id类型
+				CDATA 普通命名
+				(enum1|enum2|enum3...) 枚举类
+				属性值约束:
+				默认值
+			 	#REQUIRED 必须要有的
+			 	#IMPLIED  可有可无的
+			  -->
+			 <!ATTLIST user 
+                            id ID #REQUIRED		
+                            name CDATA #IMPLIED  
+                            >
+                            <!-- name CDATA "蛋蛋"  表示默认值为蛋蛋  -->
+			 
+]>
+<users>
+			<!-- id只能以字母或者下划线_为开头 -->
+	<user id="u001" name="蛋蛋">
+		<email>85740295@qq.com</email>
+		<phones>
+			<phone>186948659604</phone>
+			<phone>17586973354</phone>
+		</phones>
+	</user>
+	<user id="u002" name="肉肉">
+		<email>847659482@qq.com</email>
+		<phones>
+			<phone>186948659604</phone>
+			<phone>17586973354</phone>
+		</phones>
+	</user>
+	<user id="u003" name="花花">
+		<email>4386739219@qq.com</email>
+		<phones>
+			<phone>186948659604</phone>
+			<phone>17586973354</phone>
+		</phones>
+	</user>
+</users>

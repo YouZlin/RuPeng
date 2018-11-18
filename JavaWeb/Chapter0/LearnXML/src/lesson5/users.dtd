@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT users (user*)>
+<!ELEMENT user (email+,phones?)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phones (phone*)>
+<!ELEMENT phone (#PCDATA)>
+<!ATTLIST user 
+	        id ID #REQUIRED		
+	        name CDATA #IMPLIED  
+	        >
+

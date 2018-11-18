@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE usedtd SYSTEM "usedtd.dtd">
+<!-- 
+方法一:直接把DTD写在XML文件中
+方法二:把单独的DTD文件放在同一个项目下 
+<!DOCTYPE usedtd SYSTEM "usedtd.dtd">
+方法三:把单独的DTD文件放在互联网上
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  "http://www.w3.org/TR/html4/loose.dtd">
+-->
+<usedtd>
+	<user id="u001" name="蛋蛋">
+		<email>85740295@qq.com</email>
+		<phones>
+			<phone>186948659604</phone>
+			<phone>17586973354</phone>
+		</phones>
+	</user>
+	<user id="u002" name="肉肉">
+		<email>847659482@qq.com</email>
+		<phones>
+			<phone>186948659604</phone>
+			<phone>17586973354</phone>
+		</phones>
+	</user>
+	<user id="u003" name="花花">
+		<email>4386739219@qq.com</email>
+		<phones>
+			<phone>186948659604</phone>
+			<phone>17586973354</phone>
+		</phones>
+	</user>
+</usedtd>

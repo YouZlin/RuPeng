@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="mystudents" xmlns:tns="http://www.example.org/student" elementFormDefault="qualified">
+<!--
+	xmlns="http://www.w3.org/2001/XMLSchema" 使用W3c定义好的基本规则 
+	targetNamespace="http://www.example.org/student" 定义当前的schema文件的命名空间
+ -->
+ <!--
+ 		简单的几个元素:
+ 			使用<element>定义一个新元素
+ 			使用<complexType>表示此元素为复合元素
+ 			使用<sequence>表示子元素按照定义的顺序出现
+ 			使用<attribute>定义元素的属性
+ 			等等...... 
+  -->
+
+    <element name="students">
+    		<complexType>
+    			<sequence>
+    				<element name="student" maxOccurs="unbounded">
+    					<complexType>
+	    					<sequence>
+		    					<element name="name" type="string"></element>
+		    				</sequence>
+    					</complexType>
+    				</element>
+    			</sequence>
+    		</complexType>
+    </element>
+</schema>

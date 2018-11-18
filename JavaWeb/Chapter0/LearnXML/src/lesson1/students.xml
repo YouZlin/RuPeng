@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+	<student id="s001" name="dandan">
+		<email>dandan@rupeng.com</email>
+		<comment>1?2</comment>
+		<!--在某些字符的时候需要用到实体字符,避免解析出现异常-->
+		<![CDATA[在CDATA区字符都会被正常解析]]>
+	</student>
+</students>
