@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>MyServlet</display-name>
+  
+  <!-- 如果没有页面,通过下列的名称依次查找显示 -->
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<!-- 用于页面文件和执行类的匹配名称:名称唯一 -->
+  	<servlet-name>DemoServlet</servlet-name>
+  	<!-- 执行页面请求的Servlet路径 -->
+  	<servlet-class>lesson1.DemoServlet</servlet-class>
+  </servlet>
+  
+  <!-- 可以有多个servlet-mapping匹配一个servlet -->
+  <servlet-mapping>
+  	<!-- 用于页面文件和执行类的匹配名称 -->
+  	<servlet-name>DemoServlet</servlet-name>
+  	<!-- 用于接收服务器返回的页面路径 -->
+  	<url-pattern>/test/lesson1/demo1.jsp</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  	<!-- 用于页面文件和执行类的匹配名称:名称唯一 -->
+  	<servlet-name>MultServlet</servlet-name>
+  	<!-- 执行页面请求的Servlet路径 -->
+  	<servlet-class>lesson1.MultServlet</servlet-class>
+  </servlet>
+  
+  <!-- 可以有多个servlet-mapping匹配一个servlet -->
+  <servlet-mapping>
+  	<!-- 用于页面文件和执行类的匹配名称 -->
+  	<servlet-name>MultServlet</servlet-name>
+  	<!-- 用于接收服务器返回的页面路径 -->
+  	<url-pattern>/mult</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 登陆的Servlet -->
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>lesson2.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 进行计算Servlet -->
+  <servlet>
+  	<servlet-name>CalcServlet</servlet-name>
+  	<servlet-class>lesson2.CalcServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CalcServlet</servlet-name>
+  	<url-pattern>/calc</url-pattern>
+  </servlet-mapping>
+</web-app>

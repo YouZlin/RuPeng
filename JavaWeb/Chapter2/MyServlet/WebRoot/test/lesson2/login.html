@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>login.html</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+  	
+  		<form action="../../login" method="get">
+  			<br/>
+  			UserName:<input type="text" name="username"/>
+  			<br/>
+  			UserPassword:<input type="text" name="password"/>
+  			<br/>
+  			<select name="prov">
+  				<option value="bj">北京</option>
+  				<option value="cd">成都</option>
+  				<option value="fz">福州</option>
+  			</select>
+  			<br/>
+  			<input type="submit" value="Login"/>
+  			<br/>
+  			<textarea rows="3" cols="5" name="area1"></textarea>
+  			<br/>
+  			<!-- 只能为input,textarea,select三种类型标签(有name的value才会被提交) -->
+  			
+  			<!-- div就不会被提交 -->
+  			<div name="div1" value="mydiv1">divTest</div>
+  			<br/>
+  			<!-- 同一个name的radio为同一组,选中的value才会被提交给服务器 -->
+  			<input type="radio" name="gender" id="radioMale" value="male"/><label for="radioMale">男</label><br/>
+  			<input type="radio" name="gender" id="radioFemale" value="female"/><label for="radioFemale">女</label><br/>
+  			<input type="radio" name="gender" id="radioUnknow" value="unknown"/><label for="radioUnknow">中性</label><br/>
+  			<br/>
+  			<!-- 提交的值会有'name'='value'的情况出现 -->
+  			<input type="submit" name="Login1" value="DengLu1"/>
+  			<input type="submit" name="Login2" value="DengLu2"/>
+  		</form>
+  		
+  </body>
+</html>

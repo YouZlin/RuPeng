@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>calc.html</title>
+	
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+    <form action="../../calc" method="get">
+    	<input type="text" name="i1"/><br/>
+    	<input type="radio" name="op" id="+" value="+"/><label for="+">加</label>
+    	<input type="radio" name="op" id="-" value="-"/><label for="-">减</label>
+    	<input type="radio" name="op" id="*" value="*"/><label for="*">乘</label>
+    	<input type="radio" name="op" id="/" value="/"/><label for="/">除</label>
+    	<br/>
+    	<input type="text" name="i2"/>
+    	<br/>
+    	<input type="submit" name="calc" id="calc"/>
+    </form>
+    <!-- 此处不会提交,只有在form表单中才会被提交 -->
+    <input type="text" name="test2"/>
+    
+  </body>
+</html>
